@@ -1,0 +1,19 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=506
+
+This script simplifies usage of the :grep-command and the navigation
+through search results and search history.
+
+To start search for the word under the cursor or for the visually
+selected text press <Leader>gr. If there is no word under the cursor,
+you will be prompted for a search-string. To be prompted for a
+search-string anyway pressing <Leader>ga will do it.
+
+Files will be searched in the actual directory. The file pattern
+can be defined by a global variable, its default is
+"*.c *.h *.cpp *.hpp" (yes, this script is primarily for
+programmers :-) )
+
+To show search-results open quickfix-window with :copen.
+To navigate through the occurrences press <F6> or <F7>.
+To bring back results of older or newer search-sessions press
+<S-F6> or <S-F7>.
